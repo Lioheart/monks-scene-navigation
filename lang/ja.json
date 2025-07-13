@@ -1,8 +1,10 @@
 {
   "MonksSceneNavigation.RemoveNav": "ナビゲーションを削除",
-  "MonksSceneNavigation.GoBack": "前のシーンに戻る",
   "MonksSceneNavigation.SetViewPosition": "表示位置をセット",
   "MonksSceneNavigation.PullAllPlayers": "全プレイヤーをこのシーンに移動",
+  "MonksSceneNavigation.ReturnLastScene": "{lastScene} に戻る",
+  "MonksSceneNavigation.NoPreviousScene": "前のシーンがありません",
+  "MonksSceneNavigation.ViewArtwork": "アートワークを表示",
 
   "MonksSceneNavigation.click-to-view.name": "クリックで表示",
   "MonksSceneNavigation.click-to-view.hint": "クリックした際、設定を行うのではなく、シーンを表示します。",

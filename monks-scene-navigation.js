@@ -81,7 +81,7 @@ Hooks.on("init", () => {
             options.splice(idx, 0, permission);
 
             var view_artwork = {
-                name: "View Artwork",
+                name: "MonksSceneNavigation.ViewArtwork",
                 icon: '<i class="fas fa-image"></i>',
                 condition: li => {
                     const document = this.collection.get(li.dataset.entryId);
