@@ -40,7 +40,10 @@ export class MonksNavigation extends CONFIG.ui.nav {
         this.setCollapseTooltip(`SCENE_NAVIGATION.${this.expanded ? "COLLAPSE" : "EXPAND"}`);
 
         // Set the previous tooltip to empty if no scene is active
-        this.setPreviousTooltip(this._lastScene ? `Return to: ${this._lastScene.navName || this._lastScene.name}` : "No previous scene");
+        this.setPreviousTooltip(this._lastScene 
+          ? game.i18n.format("MonksSceneNavigation.ReturnLastScene", {lastScene: this._lastScene.navName || this._lastScene.name })
+          : "MonksSceneNavigation.NoPreviousScene"
+        );
 
         let canGoBack = setting("add-back-button") == "everyone" || (setting("add-back-button") == "true" && game.user.isGM);
         if (canGoBack)
